@@ -1,0 +1,31 @@
+.pictures{
+    height: 500px;
+    width: 900px;
+
+}
+h1{ text-align: center;
+    color: skyblue;
+}
+p{
+    color:rgb(196, 10, 10);
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 25px;
+
+}
+.ktm{
+    background-color: rgba(11, 51, 152, 0.094);
+   
+}
+.lum{
+    background-color: rgba(15, 29, 41, 0.066);
+
+}
+.pkr{
+    background-color: rgba(140, 107, 155, 0.121);
+
+}
+h2{ text-align: center;
+    color: rgb(162, 135, 235);}
+
+
