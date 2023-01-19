@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+
+<body>
+    <h1>Click the button to find the factorial  of the entered number.</h1>
+    <button onclick="facto()">Click me</button>
+
+    <script>
+        var x = prompt("Enter a number")
+
+        function facto() {
+            var num1 = 1;
+            for (let i = 1; i <= x; i++) {
+
+                num1 = num1 * i;
+            }
+
+            alert(num1);
+        }
+    </script>
+</body>
+
+</html>

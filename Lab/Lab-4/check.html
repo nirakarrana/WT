@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation of Email and Password</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" /><br /><br />
+            <label for="p">Password:</label>
+            <input type="password" id="p" />
+            <br /><br />
+            <input type="button" value="submit" id="submit" />
+        </fieldset>
+    </form>
+    <script>
+        let el1 = document.getElementById("mail");
+        let el2 = document.getElementById("p");
+        document.getElementById("submit").addEventListener("click", () => {
+            val1 = el1.value;
+            let atposition = val1.lastIndexOf("@");
+            let dotposition = val1.lastIndexOf(".");
+            if (
+                el1.value == "" ||
+                el2.value == "" ||
+                atposition < 1 ||
+                dotposition < atposition + 2 ||
+                dotposition + 2 >= el1.length
+            ) {
+                alert("incomplete");
+            } else {
+                alert("successfully submitted");
+            }
+        });
+    </script>
+</body>
+
+</html>
